@@ -16,8 +16,8 @@ class Category extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function article()
+    public function post()
     {
-        return $this->hasMany(Article::class);
+        return $this->hasMany(Post::class);
     }
 }
